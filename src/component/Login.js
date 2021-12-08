@@ -18,7 +18,7 @@ export default function Login({setToken}) {
 
   const checkLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/login", {
+      const response = await axios.post("https://todolist-ba.herokuapp.com/login", {
         email: email,
         password: password,
       });
